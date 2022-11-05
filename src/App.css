@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  outline: none;
+}
+
+body{
+  background-color: grey
+}
+
+.wrapper{
+  width: 30% ;
+  background-color: #fff;
+  margin: 15% auto;
+  box-shadow: blueviolet;
+}
+
+.wrapper h1{
+  text-align: center;
+  background-color: grey;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 5%;
+  }
+
+.list {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: 68px;
+}
+
+.check{
+  width: 33px;
+  height: 33px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin: auto 10px;
+    }
+
+.check-done{
+  width: 33px;
+  height: 33px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin: auto 10px;
+  background-image: url(./img/check-marck.svg);;
+  overflow: hidden;
+  }
+
+.list .task{
+  flex: 1;
+  margin-left: 10px;
+}
+
+.list .task-done{
+  flex: 1;
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+.list-done{
+  display: none;
+}
+
+ .remove__icon{
+  width: 22px;
+  height: 22px;
+  opacity: 0.5;
+  margin-right: 10px;
+  cursor: pointer;
+ }
+
+.add-form{
+  display: flex;
+  width: 100%;
+  height: 75px;
+  border-bottom: 3px solid grey;
+}
+
+.add {
+  display: flex; 
+  }
+
+.add-item{
+  width: 100%;
+  height: 75px;
+  margin: 0 0 0 15px;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  font-size: 2rem;
+}
+
+.arrow{
+  visibility: hidden;
+  margin: auto 22px;
+  opacity: 0.5;
+  height: 20px;
+  width: 28px;
+ }
+
+.arrow-add{
+  visibility: visible;
+  margin: auto 22px;
+  opacity: 0.5;
+  height: 20px;
+  width: 28px;
+ }
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding-bottom: 5px;
+  overflow: hidden;
+ }
+
+.empty {
+  text-align: center;
+  background: grey;
+  font-size: 1.5rem;
+}
+
+.count{
+  display: flex;
+}
+
+.count span {
+  margin-right: 5px;
+}
+
+.sort-btn{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+button{
+  margin: auto 5px; 
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.revome-done{
+  margin: auto 5px; 
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+ button:focus{
+  border: 1px solid grey;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  }
+
+.remove-done:focus{
+text-decoration: underline;
+padding: 2px;
+cursor: pointer;
+overflow: hidden;
+}
+
+h5{
+  text-align: center;
+  background-color: grey;
+  font-size: 1rem;
+  padding-top: 5%;
+}
+
+@media  (max-width: 426px){
+
+.wrapper{
+  width: 80% ;
+}
+
+.wrapper h1{
+  text-align: center;
+  background-color: grey;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-bottom: 5%;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+.list {
+  font-size: 1rem;
+}
+
+.list-done{
+  display: none;
+}
+
+.addItem{
+  font-size: 1rem;
+}
+
+.remove__icon{
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.check{
+  width: 17px;
+  height: 17px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin: auto 5px;
+}
+
+.arrow{
+  margin: auto 10px;
+  opacity: 0.5;
+  height: 20px;
+  width: 28px;
+}
+
+.check{
+  width: 18px;
+  height: 18px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin: auto 5px;
+    }
+
+.check-done{
+  width: 17px;
+  height: 17px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  margin: auto 5px;
+  background-image: url(./img/check-marck.svg);;
+  overflow: hidden;
+  }
+
+.arrow{
+  visibility: hidden;
+  margin: auto 11px;
+  opacity: 0.5;
+  height: 10px;
+  width: 14px;
+}
+  
+.arrow-add{
+  visibility: visible;
+  margin: auto 11px;
+  opacity: 0.5;
+  height: 10px;
+  width: 14px;
+}
+
+.footer{
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: space-between;
+  margin: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.empty {
+  text-align: center;
+  background: grey;
+  font-size: 1rem;
+}
+}
